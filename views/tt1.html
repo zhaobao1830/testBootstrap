@@ -5,7 +5,9 @@
     <title></title>
     <script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap-switch.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-switch.css">
 </head>
 <body>
     <!--<div class="container">-->
@@ -27,6 +29,7 @@
 
        <!--</div>-->
     <!--</div>-->
+    <input id="switch-onColor" type="checkbox" checked data-on-color="info">
     <div class="switch switch-large">
         <input type="checkbox" checked />
     </div>
@@ -46,5 +49,10 @@
     <div class="switch" data-on="primary" data-off="info">
         <input type="checkbox" checked />
     </div>
+    <script>
+    $(function(argument) {
+    $('[type="checkbox"]').bootstrapSwitch();
+    })
+    </script>
 </body>
 </html>
